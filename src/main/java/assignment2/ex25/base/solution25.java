@@ -39,7 +39,7 @@ public class solution25 {
         solution25 application = new solution25();
         PasswordChecker pass = new PasswordChecker();
         input = application.readInput();
-        int result = pass.passwordStrength(input);
+        int result = pass.passwordValidator(input);
 
         if (result==4){
             output = "is a very strong password";

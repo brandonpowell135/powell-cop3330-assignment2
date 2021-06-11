@@ -1,7 +1,7 @@
 package assignment2.ex25.base;
 
 public class PasswordChecker {
-    public int passwordStrength(String input) {
+    public int passwordValidator(String input) {
          int result=0;
 
         if (input.length() >= 8) {
