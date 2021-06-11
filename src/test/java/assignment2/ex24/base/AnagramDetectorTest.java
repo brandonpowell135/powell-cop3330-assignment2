@@ -5,13 +5,6 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class AnagramDetectorTest {
-    /*
-    what do you test?
-
-    test edge cases - 0,1 very large numbers, very small numbers
-    test both true and false
-
-     */
 
   @Test
     void isAnagram_returns_true_for_anagram_lowercase() {
