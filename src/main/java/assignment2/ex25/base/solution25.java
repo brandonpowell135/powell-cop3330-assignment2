@@ -33,7 +33,6 @@ public class solution25 {
     private static final Scanner in = new Scanner(System.in);
     public static String input;
     public static String output;
-    public static int result;
 
     public static void main(String[] args) {
         solution25 application = new solution25();
