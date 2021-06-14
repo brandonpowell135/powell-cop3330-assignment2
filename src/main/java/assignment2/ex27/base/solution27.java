@@ -1,3 +1,7 @@
+/*
+ *  UCF COP3330 Summer 2021 Assignment 2 Solution
+ *  Copyright 2021 Brandon Powell
+ */
 package assignment2.ex27.base;
 
 import assignment2.ex25.base.PasswordChecker;
@@ -7,7 +11,7 @@ import java.util.Scanner;
 
 public class solution27 {
     private static final Scanner in = new Scanner(System.in);
-    public static String firstName,lastName,employeeID,zipCode;
+    public static String firstName, lastName, employeeID, zipCode;
 
 
     public static void main(String[] args) {
@@ -21,22 +25,22 @@ public class solution27 {
 
         String firstNameResult = valid.firstNameValidation(firstName);
         String result = valid.firstNameValidation(firstName);
-        //String output = application.validateinput(result);
+        // String results = valid.validateinput(firstName);
+
 
         result = valid.firstNameValidation(firstName);
         System.out.print(result);
 
     }
+
     private String readUserInput(String prompt) {
         String input;
         System.out.print(prompt);
         input = in.nextLine();
         return input;
     }
-    //public String validateinput(boolean firstName){
 
+   // public static String validateinput(String firstName) {
+        // if (firstname=="The first name must be at least 2 characters long.")
+    }
 
-
-
-
-}
