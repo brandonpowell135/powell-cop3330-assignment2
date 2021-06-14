@@ -1,7 +1,3 @@
-/*
- *  UCF COP3330 Summer 2021 Assignment 2 Solution
- *  Copyright 2021 Brandon Powell
- */
 package assignment2.ex29.base;
 
 import assignment2.ex26.base.PaymentCalculator;
@@ -10,7 +6,7 @@ import java.util.Scanner;
 
 public class solution29 {
     private static final Scanner in = new Scanner(System.in);
-    public static double rate;
+    public static int rate;
 
     public static void main(String[] args) {
         rate = readInput("What is the rate of return? ");
@@ -20,9 +16,8 @@ public class solution29 {
         System.out.print("It will take " + results + " years to double your initial investment.");
     }
 
-    public static double readInput(String prompt) {
+    public static int readInput(String prompt) {
         System.out.print(prompt);
-        double rate = in
         boolean isNumber;
         do {
             if (in.hasNextInt()) {
@@ -34,7 +29,7 @@ public class solution29 {
             }
         }while (!(isNumber));
         String input = in.nextLine();
-        System.out.print(input);
-        return input;
+        int intInput = Integer.parseInt(input);
+        return intInput;
     }
 }
