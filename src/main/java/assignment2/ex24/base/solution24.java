@@ -4,8 +4,8 @@ import java.util.Scanner;
 public class solution24 {
     private static final Scanner in = new Scanner(System.in);
 
-    public static String word1;
-    public static String word2;
+    private static String word1;
+    private static String word2;
 
     public static void main(String[] args) {
         //read in two strings
@@ -21,14 +21,14 @@ public class solution24 {
 
     }
 
-    public String readUserInput(String prompt) {
+    private String readUserInput(String prompt) {
         String word;
         System.out.print(prompt);
         word = in.nextLine();
         return word;
     }
 
-    public String generateOutput(boolean isAnagram) {
+    private String generateOutput(boolean isAnagram) {
         if (isAnagram){
             return (word1 + " and " + word2 + " are anagrams");
         }else {

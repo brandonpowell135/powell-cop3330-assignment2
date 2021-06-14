@@ -16,8 +16,8 @@ public class solution26 {
     PaymentCalculator calc = new PaymentCalculator();
 
     //output how many months it will take
-    double rresult = calc.calculateMonthsUnitPaidOff(balance,apr,payment);
-    System.out.print("It will take you " + rresult + " months to pay off this card.");
+    double result = calc.calculateMonthsUnitPaidOff(balance,apr,payment);
+    System.out.print("It will take you " + result + " months to pay off this card.");
 
 }
     public static double readInput(String prompt){

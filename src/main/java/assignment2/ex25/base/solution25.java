@@ -31,8 +31,8 @@ import java.util.Scanner;
 
 public class solution25 {
     private static final Scanner in = new Scanner(System.in);
-    public static String input;
-    public static String output;
+    private static String input;
+    private static String output;
 
     public static void main(String[] args) {
         solution25 application = new solution25();
@@ -55,7 +55,7 @@ public class solution25 {
 
     }
 
-    public String readInput() {
+    private String readInput() {
 
         System.out.print("Enter password ");
         return in.nextLine();
